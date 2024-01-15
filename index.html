@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>calculator</title>
+</head>
+<body>
+    
+        <div class="cal-container" id="cal-container">
+            <div class="dis-container" id="dis-container">
+                <input type="text" class="displaybar" id="displaybar" placeholder="0" >
+            </div>
+            <div class="btn-container" id="btn-container">
+
+                <button onclick="appendToDisplay('(')" class="btngroup topleft">(</button>
+                <button onclick="appendToDisplay(')')" class="btngroup topleft">)</button>
+                <button onclick="appendToDisplay('%')" class="btngroup topleft">%</button>
+                <button onclick="clearDisplay()" class="btngroup topleft">AC</button>
+
+                <button onclick="appendToDisplay('7')" class="btngroup">7</button>
+                <button onclick="appendToDisplay('8')" class="btngroup">8</button>
+                <button onclick="appendToDisplay('9')" class="btngroup">9</button>
+                <button onclick="appendToDisplay('/')" class="btngroup topleft">/</button>
+                
+                
+                <button onclick="appendToDisplay('4')" class="btngroup">4</button>
+                <button onclick="appendToDisplay('5')" class="btngroup">5</button>
+                <button onclick="appendToDisplay('6')" class="btngroup">6</button>
+                <button onclick="appendToDisplay('*')" class="btngroup topleft">x</button>
+               
+                
+                <button onclick="appendToDisplay('1')" class="btngroup">1</button>
+                <button onclick="appendToDisplay('2')" class="btngroup">2</button>
+                <button onclick="appendToDisplay('3')" class="btngroup">3</button>
+                <button onclick="appendToDisplay('-')" class="btngroup topleft">-</button>
+
+                <button onclick="appendToDisplay('0')" class="btngroup">0</button>
+                <button onclick="appendToDisplay('.')" class="btngroup">.</button>
+                <button onclick="displayResult()" class="btngroup">=</button>
+                <button onclick="appendToDisplay('+')" class="btngroup topleft">+</button>
+        
+            </div>
+        </div>
+    <!-- main css -->
+    <script src="javascript/script.js"></script>
+    <!-- Bootstrap css -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
